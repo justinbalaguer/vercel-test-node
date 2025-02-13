@@ -20,4 +20,4 @@ const projectsSchema = new Schema(
 
 type Project = InferSchemaType<typeof projectsSchema>;
 
-export default model<Project>("Projects", projectsSchema);
+export default model<Project>("Projects", projectsSchema, "projects");
